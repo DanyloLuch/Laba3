@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Laba3.AddView"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="AddView"
+    BackgroundColor="#1E1E1E">
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="20">
+            <Label Margin="0,0,0,20" FontAttributes="Bold" FontSize="28" HorizontalOptions="Center" Text="New Student" TextColor="White"/>
+
+            <HorizontalStackLayout>
+                <Label Text="Full Name:" TextColor="White" />
+                <Entry Placeholder="Enter full name" Text="{Binding FullName}" TextColor="White" BackgroundColor="#333" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout>
+                <Label Text="Faculty:" TextColor="White" />
+                <Entry Placeholder="Enter faculty" Text="{Binding Faculty}" TextColor="White" BackgroundColor="#333" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout>
+                <Label Text="Department:" TextColor="White" />
+                <Entry Placeholder="Enter department" Text="{Binding Department}" TextColor="White" BackgroundColor="#333" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout>
+                <Label Text="Education Level:" TextColor="White" />
+                <Entry Placeholder="Enter education level" Text="{Binding EducationLevel}" TextColor="White" BackgroundColor="#333" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout>
+                <Label Text="Institution:" TextColor="White" />
+                <Entry Placeholder="Enter institution" Text="{Binding Institution}" TextColor="White" BackgroundColor="#333" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout>
+                <Label Text="Subject:" TextColor="White" />
+                <Entry Placeholder="Enter subject" Text="{Binding Subject}" TextColor="White" BackgroundColor="#333" />
+            </HorizontalStackLayout>
+
+            <Button Margin="20,0,0,0" Clicked="SubmitClicked" HorizontalOptions="Center" Text="Submit" BackgroundColor="#333" TextColor="White"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

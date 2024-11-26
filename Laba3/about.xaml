@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Laba3.AboutView"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="AboutView"
+    BackgroundColor="#1E1E1E">
+    <VerticalStackLayout VerticalOptions="Center">
+        <Label Text="Лабораторна Робота 2 Json Dispatcher, Кучерук Данило, 2 курс, група К25"
+               VerticalOptions="Center"
+               FontSize="Large"
+               TextColor="AliceBlue"
+               HorizontalOptions="Center"
+               Padding="10"
+               LineBreakMode="WordWrap" />
+    </VerticalStackLayout>
+</ContentPage>

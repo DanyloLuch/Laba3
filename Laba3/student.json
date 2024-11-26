@@ -1,0 +1,74 @@
+[
+  {
+    "IsSelected": false,
+    "FullName": "Oleg Sydorenko",
+    "Faculty": "Faculty of Applied Sciences",
+    "Department": "Department of Computer Science",
+    "EducationLevel": "Master",
+    "Institution": "Odesa University",
+    "Subject": "Programming Basics"
+  },
+  {
+    "IsSelected": false,
+    "FullName": "Artem Dmytrenko",
+    "Faculty": "Faculty of Mathematics and Cybernetics",
+    "Department": "Department of Software Engineering",
+    "EducationLevel": "Bachelor",
+    "Institution": "Kyiv University",
+    "Subject": "Programming Basics"
+  },
+  {
+    "IsSelected": false,
+    "FullName": "Dmytro Kuzmenko",
+    "Faculty": "Faculty of Applied Sciences",
+    "Department": "Department of Information Systems",
+    "EducationLevel": "Master",
+    "Institution": "Dnipro University",
+    "Subject": "Networks and Information Security"
+  },
+  {
+    "IsSelected": false,
+    "FullName": "Olena Tymoshenko",
+    "Faculty": "Faculty of Information Technology",
+    "Department": "Department of Information Security",
+    "EducationLevel": "Bachelor",
+    "Institution": "Cherkasy University",
+    "Subject": "Networks and Information Security"
+  },
+  {
+    "IsSelected": false,
+    "FullName": "Olena Maksymchuk",
+    "Faculty": "Faculty of Mathematics and Cybernetics",
+    "Department": "Department of Distributed Computing",
+    "EducationLevel": "Master",
+    "Institution": "Lviv University",
+    "Subject": "System Modeling"
+  },
+  {
+    "IsSelected": false,
+    "FullName": "Yaroslav Shevchenko",
+    "Faculty": "Faculty of Applied Sciences",
+    "Department": "Department of Programming",
+    "EducationLevel": "Bachelor",
+    "Institution": "Kyiv University",
+    "Subject": "Programming Basics"
+  },
+  {
+    "IsSelected": false,
+    "FullName": "88888",
+    "Faculty": "Faculty of Information Technology",
+    "Department": "Department of Computer Science",
+    "EducationLevel": "Master",
+    "Institution": "Mykolaiv University",
+    "Subject": "Internet Technologies"
+  },
+  {
+    "IsSelected": false,
+    "FullName": "56789",
+    "Faculty": "gf",
+    "Department": "fg",
+    "EducationLevel": "22",
+    "Institution": "33sg",
+    "Subject": "f"
+  }
+]

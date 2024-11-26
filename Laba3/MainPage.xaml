@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Laba3.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="#1E1E1E">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" HorizontalOptions="Center" Spacing="25" VerticalOptions="Start">
+
+            <!-- Кнопки Open, Save, Add, Edit, Delete в ряд -->
+            <StackLayout Padding="20" HorizontalOptions="FillAndExpand" Orientation="Horizontal" Spacing="25" VerticalOptions="Start">
+                <!-- Кнопки Open та Save -->
+                <Button x:Name="OpenFileButton" BackgroundColor="#666" Clicked="OpenJsonFileClicked" HorizontalOptions="Center" Text="Open File" TextColor="White" />
+                <Button x:Name="SaveFileButton" BackgroundColor="#666" Clicked="SaveClicked" HorizontalOptions="Center" Text="Save File" TextColor="White" />
+                <!-- Кнопки Add, Edit, Delete -->
+                <Button x:Name="CounterBtn4" BackgroundColor="#666" Clicked="AddClicked" HorizontalOptions="Center" Text="Add" TextColor="White" />
+                <Button x:Name="CounterBtn" BackgroundColor="#666" Clicked="EditClicked" HorizontalOptions="Center" Text="Edit" TextColor="White" />
+                <Button x:Name="CounterBtn2" BackgroundColor="#666" Clicked="DeleteClicked" HorizontalOptions="Center" Text="Delete" TextColor="White" />
+            </StackLayout>
+
+            <!-- Контент таблиці -->
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="25">
+                <VerticalStackLayout HorizontalOptions="Center" Spacing="20">
+                    <HorizontalStackLayout HorizontalOptions="Center">
+                        <VerticalStackLayout HorizontalOptions="Center">
+                            <Grid Margin="0" HorizontalOptions="Center" WidthRequest="1300">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="40" />
+                                    <ColumnDefinition Width="150" />
+                                    <ColumnDefinition Width="300" />
+                                    <ColumnDefinition Width="300" />
+                                    <ColumnDefinition Width="150" />
+                                    <ColumnDefinition Width="150" />
+                                    <ColumnDefinition Width="200" />
+                                </Grid.ColumnDefinitions>
+                                <Border Grid.Row="0" Grid.Column="1" Stroke="White" StrokeThickness="1">
+                                    <Label HorizontalOptions="Center" Text="Full Name" TextColor="White" VerticalOptions="Center" />
+                                </Border>
+                                <Border Grid.Row="0" Grid.Column="2" Stroke="White" StrokeThickness="1">
+                                    <Label HorizontalOptions="Center" Text="Faculty" TextColor="White" VerticalOptions="Center" />
+                                </Border>
+                                <Border Grid.Row="0" Grid.Column="3" Stroke="White" StrokeThickness="1">
+                                    <Label HorizontalOptions="Center" Text="Department" TextColor="White" VerticalOptions="Center" />
+                                </Border>
+                                <Border Grid.Row="0" Grid.Column="4" Stroke="White" StrokeThickness="1">
+                                    <Label HorizontalOptions="Center" Text="Education Level" TextColor="White" VerticalOptions="Center" />
+                                </Border>
+                                <Border Grid.Row="0" Grid.Column="5" Stroke="White" StrokeThickness="1">
+                                    <Label HorizontalOptions="Center" Text="Institution" TextColor="White" VerticalOptions="Center" />
+                                </Border>
+                                <Border Grid.Row="0" Grid.Column="6" Stroke="White" StrokeThickness="1">
+                                    <Label HorizontalOptions="Center" Text="Subject" TextColor="White" VerticalOptions="Center" />
+                                </Border>
+                            </Grid>
+                            <CollectionView Margin="0,0" ItemsSource="{Binding}">
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid Margin="0" HorizontalOptions="Center" WidthRequest="1300">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto" />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="40" />
+                                                <ColumnDefinition Width="150" />
+                                                <ColumnDefinition Width="300" />
+                                                <ColumnDefinition Width="300" />
+                                                <ColumnDefinition Width="150" />
+                                                <ColumnDefinition Width="150" />
+                                                <ColumnDefinition Width="200" />
+                                            </Grid.ColumnDefinitions>
+
+                                            <Border Grid.Row="0" Grid.Column="1" Stroke="White" StrokeThickness="1">
+                                                <Label HorizontalOptions="Center" Text="{Binding FullName}" TextColor="White" VerticalOptions="Center" />
+                                            </Border>
+                                            <Border Grid.Row="0" Grid.Column="2" Stroke="White" StrokeThickness="1">
+                                                <Label HorizontalOptions="Center" Text="{Binding Faculty}" TextColor="White" VerticalOptions="Center" />
+                                            </Border>
+                                            <Border Grid.Row="0" Grid.Column="3" Stroke="White" StrokeThickness="1">
+                                                <Label HorizontalOptions="Center" Text="{Binding Department}" TextColor="White" VerticalOptions="Center" />
+                                            </Border>
+                                            <Border Grid.Row="0" Grid.Column="4" Stroke="White" StrokeThickness="1">
+                                                <Label HorizontalOptions="Center" Text="{Binding EducationLevel}" TextColor="White" VerticalOptions="Center" />
+                                            </Border>
+                                            <Border Grid.Row="0" Grid.Column="5" Stroke="White" StrokeThickness="1">
+                                                <Label HorizontalOptions="Center" Text="{Binding Institution}" TextColor="White" VerticalOptions="Center" />
+                                            </Border>
+                                            <Border Grid.Row="0" Grid.Column="6" Stroke="White" StrokeThickness="1">
+                                                <Label HorizontalOptions="Center" Text="{Binding Subject}" TextColor="White" VerticalOptions="Center" />
+                                            </Border>
+
+                                            <RadioButton
+                                                Grid.Row="0"
+                                                Grid.Column="0"
+                                                GroupName="LessonSelection"
+                                                IsChecked="{Binding IsSelected, Mode=TwoWay}"
+                                                VerticalOptions="Center" />
+                                        </Grid>
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+
+                            <!-- Пошук -->
+                            <HorizontalStackLayout Padding="0,0,0,0" Margin="0,50,0,0" HorizontalOptions="FillAndExpand" Spacing="10" VerticalOptions="Center">
+                                <Label Padding="0,10" HorizontalOptions="FillAndExpand" Text="Search:" TextColor="White" VerticalOptions="Center" />
+                                <Entry x:Name="searchEntry" HorizontalOptions="FillAndExpand" Placeholder="Enter text here" BackgroundColor="#333" VerticalOptions="Center" TextColor="White"/>
+                                <Picker x:Name="searchPicker" HorizontalOptions="FillAndExpand" VerticalOptions="Center" BackgroundColor="#333" TextColor="White">
+                                    <Picker.ItemsSource>
+                                        <x:Array Type="{x:Type x:String}">
+                                            <x:String>FullName</x:String>
+                                            <x:String>Faculty</x:String>
+                                            <x:String>Subject</x:String>
+                                        </x:Array>
+                                    </Picker.ItemsSource>
+                                </Picker>
+                                <Button x:Name="CounterBtn7" BackgroundColor="#666" Clicked="SearchClicked" HorizontalOptions="Center" Text="Submit" TextColor="White" />
+                                <Button x:Name="CounterBtn8" BackgroundColor="#666" Clicked="SearchBackClicked" HorizontalOptions="Center" Text="Back" TextColor="White" />
+                            </HorizontalStackLayout>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Laba3.EditView"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="EditView"
+    BackgroundColor="#1E1E1E">
+    <ScrollView>
+        <VerticalStackLayout Padding="20">
+            <HorizontalStackLayout Margin="0,50" HorizontalOptions="Center">
+                <VerticalStackLayout HorizontalOptions="Center">
+                    <Label Text="Edit" FontSize="28" TextColor="White" HorizontalOptions="Center"/>
+
+                    <Grid HorizontalOptions="Center" VerticalOptions="FillAndExpand" WidthRequest="400">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="70" />
+                            <RowDefinition Height="70" />
+                            <RowDefinition Height="70" />
+                            <RowDefinition Height="70" />
+                            <RowDefinition Height="70" />
+                            <RowDefinition Height="70" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="200" />
+                            <ColumnDefinition Width="200" />
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" Text="Full Name" VerticalOptions="Center" TextColor="White"/>
+                        <Entry Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" Text="{Binding FullName}" VerticalOptions="Center" BackgroundColor="#333" TextColor="White"/>
+
+                        <Label Grid.Row="1" Grid.Column="0" HorizontalOptions="Center" Text="Faculty" VerticalOptions="Center" TextColor="White"/>
+                        <Entry Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" Text="{Binding Faculty}" VerticalOptions="Center" BackgroundColor="#333" TextColor="White"/>
+
+                        <Label Grid.Row="2" Grid.Column="0" HorizontalOptions="Center" Text="Department" VerticalOptions="Center" TextColor="White"/>
+                        <Entry Grid.Row="2" Grid.Column="1" HorizontalOptions="Center" Text="{Binding Department}" VerticalOptions="Center" BackgroundColor="#333" TextColor="White"/>
+
+                        <Label Grid.Row="3" Grid.Column="0" HorizontalOptions="Center" Text="Education Level" VerticalOptions="Center" TextColor="White"/>
+                        <Entry Grid.Row="3" Grid.Column="1" HorizontalOptions="Center" Text="{Binding EducationLevel}" VerticalOptions="Center" BackgroundColor="#333" TextColor="White"/>
+
+                        <Label Grid.Row="4" Grid.Column="0" HorizontalOptions="Center" Text="Institution" VerticalOptions="Center" TextColor="White"/>
+                        <Entry Grid.Row="4" Grid.Column="1" HorizontalOptions="Center" Text="{Binding Institution}" VerticalOptions="Center" BackgroundColor="#333" TextColor="White"/>
+
+                        <Label Grid.Row="5" Grid.Column="0" HorizontalOptions="Center" Text="Subject" VerticalOptions="Center" TextColor="White"/>
+                        <Entry Grid.Row="5" Grid.Column="1" HorizontalOptions="Center" Text="{Binding Subject}" VerticalOptions="Center" BackgroundColor="#333" TextColor="White"/>
+                    </Grid>
+
+                    <HorizontalStackLayout Padding="10" HorizontalOptions="Center" Spacing="50">
+                        <Button x:Name="CounterBtn" BackgroundColor="#666" Clicked="CancelClicked" HorizontalOptions="Center" Text="Cancel" TextColor="White" CornerRadius="10" HeightRequest="45"/>
+                        <Button x:Name="CounterBtn2" BackgroundColor="#666" Clicked="OkClicked" HorizontalOptions="Center" Text="OK" TextColor="White" CornerRadius="10" HeightRequest="45"/>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
