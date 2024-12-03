@@ -3,13 +3,13 @@ using System.Text.Json;
 
 namespace Laba3
 {
-    class FileManager
+    class FilesManager
     {
         private FileReader fileReader = new FileReader();
-        private FileWriter fileWriter = new FileWriter();
-        private FileSerializer fileSerializer = new FileSerializer();
+        private Writer fileWriter = new Writer();
+        private Serializer fileSerializer = new Serializer();
 
-        public FileManager() { }
+        public FilesManager() { }
 
         private bool DeserializeFile(string content)
         {
@@ -38,11 +38,10 @@ namespace Laba3
             file.FilePath = filePath;
             file.FileContent = fileReader.ReadFile(filePath);
 
-            // Десеріалізація файлу
             var deserializedData = fileSerializer.Deserialize(file.FileContent);
             if (deserializedData != null && deserializedData.Count > 0)
             {
-                file.Data = deserializedData;  // Оновлення даних у Schelude
+                file.Data = deserializedData;  
                 return true;
             }
             return false;

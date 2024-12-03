@@ -1,7 +1,7 @@
 ﻿
 namespace Laba3
 {
-    class FileWriter
+    class Writer
     {
         public void WriteFile(string filePath, string content)
         {

@@ -37,15 +37,6 @@
   },
   {
     "IsSelected": false,
-    "FullName": "Olena Maksymchuk",
-    "Faculty": "Faculty of Mathematics and Cybernetics",
-    "Department": "Department of Distributed Computing",
-    "EducationLevel": "Master",
-    "Institution": "Lviv University",
-    "Subject": "System Modeling"
-  },
-  {
-    "IsSelected": false,
     "FullName": "Yaroslav Shevchenko",
     "Faculty": "Faculty of Applied Sciences",
     "Department": "Department of Programming",
@@ -55,20 +46,20 @@
   },
   {
     "IsSelected": false,
-    "FullName": "88888",
-    "Faculty": "Faculty of Information Technology",
-    "Department": "Department of Computer Science",
-    "EducationLevel": "Master",
-    "Institution": "Mykolaiv University",
-    "Subject": "Internet Technologies"
+    "FullName": "5678",
+    "Faculty": "hj",
+    "Department": "h",
+    "EducationLevel": "g",
+    "Institution": "g",
+    "Subject": "f"
   },
   {
     "IsSelected": false,
-    "FullName": "56789",
-    "Faculty": "gf",
-    "Department": "fg",
-    "EducationLevel": "22",
-    "Institution": "33sg",
-    "Subject": "f"
+    "FullName": "Данило кучерук",
+    "Faculty": "фкнк",
+    "Department": "комп'ютерні науки",
+    "EducationLevel": "бакалавр",
+    "Institution": "КНУ",
+    "Subject": "ООП"
   }
 ]

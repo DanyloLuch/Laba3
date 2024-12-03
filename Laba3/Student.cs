@@ -9,12 +9,12 @@ namespace Laba3
     public class Student
     {
         public bool IsSelected { get; set; }
-        public string FullName { get; set; }  // Заміна "Discipline"
-        public string Faculty { get; set; }   // Заміна "Faculty"
-        public string Department { get; set; } // Заміна "Department"
-        public string EducationLevel { get; set; } // Заміна "EducationLevel"
-        public string Institution { get; set; }  // Заміна "Institution"
-        public string Subject { get; set; }     // Заміна "Subject"
+        public string FullName { get; set; } 
+        public string Faculty { get; set; }  
+        public string Department { get; set; }
+        public string EducationLevel { get; set; }
+        public string Institution { get; set; }  
+        public string Subject { get; set; }     
 
         public Student(string fullName, string faculty, string department, string educationLevel, string institution, string subject)
         {

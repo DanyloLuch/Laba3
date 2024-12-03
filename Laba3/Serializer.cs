@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Laba3
 {
-    class FileSerializer
+    class Serializer
     {
         public ObservableCollection<Student> Deserialize(string json)
         {

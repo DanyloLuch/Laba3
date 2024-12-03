@@ -8,18 +8,15 @@
     <ScrollView>
         <VerticalStackLayout Padding="20" HorizontalOptions="Center" Spacing="25" VerticalOptions="Start">
 
-            <!-- Кнопки Open, Save, Add, Edit, Delete в ряд -->
             <StackLayout Padding="20" HorizontalOptions="FillAndExpand" Orientation="Horizontal" Spacing="25" VerticalOptions="Start">
-                <!-- Кнопки Open та Save -->
                 <Button x:Name="OpenFileButton" BackgroundColor="#666" Clicked="OpenJsonFileClicked" HorizontalOptions="Center" Text="Open File" TextColor="White" />
                 <Button x:Name="SaveFileButton" BackgroundColor="#666" Clicked="SaveClicked" HorizontalOptions="Center" Text="Save File" TextColor="White" />
-                <!-- Кнопки Add, Edit, Delete -->
                 <Button x:Name="CounterBtn4" BackgroundColor="#666" Clicked="AddClicked" HorizontalOptions="Center" Text="Add" TextColor="White" />
                 <Button x:Name="CounterBtn" BackgroundColor="#666" Clicked="EditClicked" HorizontalOptions="Center" Text="Edit" TextColor="White" />
                 <Button x:Name="CounterBtn2" BackgroundColor="#666" Clicked="DeleteClicked" HorizontalOptions="Center" Text="Delete" TextColor="White" />
+                <Button x:Name="AboutButton" BackgroundColor="#666" Clicked="AboutClicked" HorizontalOptions="Center" Text="About" TextColor="White" />
             </StackLayout>
 
-            <!-- Контент таблиці -->
             <HorizontalStackLayout HorizontalOptions="Center" Spacing="25">
                 <VerticalStackLayout HorizontalOptions="Center" Spacing="20">
                     <HorizontalStackLayout HorizontalOptions="Center">
@@ -103,7 +100,6 @@
                                 </CollectionView.ItemTemplate>
                             </CollectionView>
 
-                            <!-- Пошук -->
                             <HorizontalStackLayout Padding="0,0,0,0" Margin="0,50,0,0" HorizontalOptions="FillAndExpand" Spacing="10" VerticalOptions="Center">
                                 <Label Padding="0,10" HorizontalOptions="FillAndExpand" Text="Search:" TextColor="White" VerticalOptions="Center" />
                                 <Entry x:Name="searchEntry" HorizontalOptions="FillAndExpand" Placeholder="Enter text here" BackgroundColor="#333" VerticalOptions="Center" TextColor="White"/>

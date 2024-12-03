@@ -54,24 +54,24 @@
 
 	<ItemGroup>
 	  <Compile Update="about.xaml.cs">
-	    <DependentUpon>about.xaml</DependentUpon>
+	    <DependentUpon>About.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="AddView.xaml.cs">
-	    <DependentUpon>AddView.xaml</DependentUpon>
+	  <Compile Update="AddStudent.xaml.cs">
+	    <DependentUpon>AddStudent.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="EditStudent.xaml.cs">
+	    <DependentUpon>EditStudent.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="about.xaml">
+	  <MauiXaml Update="About.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="AddCommentView.xaml">
+	  <MauiXaml Update="AddStudent.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="AddView.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="EditView.xaml">
+	  <MauiXaml Update="EditStudent.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

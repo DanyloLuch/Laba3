@@ -13,7 +13,7 @@ namespace Laba3
 {
     public partial class MainPage : ContentPage
     {
-        private FileManager fileManager;
+        private FilesManager fileManager;
         private Schelude fileObject;
         public ObservableCollection<Student> LessonList { get; set; }
 
@@ -23,7 +23,7 @@ namespace Laba3
         {
             InitializeComponent();
 
-            fileManager = new FileManager();
+            fileManager = new FilesManager();
             fileObject = Schelude.GetInstance();
 
             UpdateArticlesView();
