@@ -46,20 +46,38 @@
   },
   {
     "IsSelected": false,
-    "FullName": "5678",
-    "Faculty": "hj",
-    "Department": "h",
-    "EducationLevel": "g",
-    "Institution": "g",
-    "Subject": "f"
-  },
-  {
-    "IsSelected": false,
     "FullName": "Данило кучерук",
     "Faculty": "фкнк",
     "Department": "комп'ютерні науки",
     "EducationLevel": "бакалавр",
     "Institution": "КНУ",
     "Subject": "ООП"
+  },
+  {
+    "IsSelected": true,
+    "FullName": "2",
+    "Faculty": "2",
+    "Department": null,
+    "EducationLevel": "бакалавр",
+    "Institution": null,
+    "Subject": null
+  },
+  {
+    "IsSelected": false,
+    "FullName": "цук",
+    "Faculty": "к",
+    "Department": null,
+    "EducationLevel": "Магістр",
+    "Institution": "ук",
+    "Subject": null
+  },
+  {
+    "IsSelected": false,
+    "FullName": "1212",
+    "Faculty": "12",
+    "Department": null,
+    "EducationLevel": "алаолв",
+    "Institution": null,
+    "Subject": null
   }
 ]

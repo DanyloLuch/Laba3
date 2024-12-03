@@ -16,7 +16,7 @@ public partial class EditView : ContentPage
     {
         InitializeComponent();
 
-        Schelude file = Schelude.GetInstance();
+        StudentManager file = StudentManager.GetInstance();
 
         file.FindIndex();
 
@@ -40,7 +40,7 @@ public partial class EditView : ContentPage
 
     private void OkClicked(object sender, EventArgs e)
     {
-        Schelude file = Schelude.GetInstance();
+        StudentManager file = StudentManager.GetInstance();
         file.EditLesson(FullName, Faculty, Department, EducationLevel, Institution, Subject);
         Application.Current.CloseWindow(this.Window);
     }

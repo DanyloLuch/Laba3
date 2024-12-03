@@ -14,7 +14,7 @@ namespace Laba3
     public partial class MainPage : ContentPage
     {
         private FilesManager fileManager;
-        private Schelude fileObject;
+        private StudentManager fileObject;
         public ObservableCollection<Student> LessonList { get; set; }
 
         private bool mainPageLocker = false;
@@ -24,7 +24,7 @@ namespace Laba3
             InitializeComponent();
 
             fileManager = new FilesManager();
-            fileObject = Schelude.GetInstance();
+            fileObject = StudentManager.GetInstance();
 
             UpdateArticlesView();
         }

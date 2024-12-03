@@ -15,7 +15,7 @@ namespace Laba3
         {
             try
             {
-                var file = Schelude.GetInstance();
+                var file = StudentManager.GetInstance();
                 file.Data = fileSerializer.Deserialize(content);
                 return true;
             }
@@ -27,14 +27,14 @@ namespace Laba3
 
         public void SaveFile()
         {
-            var file = Schelude.GetInstance();
+            var file = StudentManager.GetInstance();
             var json = fileSerializer.Serialize(file.Data);
             fileWriter.WriteFile(file.FilePath, json);
         }
 
         public bool OpenFile(string filePath)
         {
-            var file = Schelude.GetInstance();
+            var file = StudentManager.GetInstance();
             file.FilePath = filePath;
             file.FileContent = fileReader.ReadFile(filePath);
 

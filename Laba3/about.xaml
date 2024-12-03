@@ -6,7 +6,7 @@
     Title="AboutView"
     BackgroundColor="#1E1E1E">
     <VerticalStackLayout VerticalOptions="Center">
-        <Label Text="Лабораторна Робота 2 Json Dispatcher, Кучерук Данило Вікторович, 2 курс, група К25"
+        <Label Text="Лабораторна Робота 3 Json Dispatcher, Кучерук Данило Вікторович, 2 курс, група К25"
                VerticalOptions="Center"
                FontSize="Large"
                TextColor="AliceBlue"

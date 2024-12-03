@@ -26,7 +26,7 @@ namespace Laba3
 
         private void SubmitClicked(object sender, EventArgs e)
         {
-            Schelude file = Schelude.GetInstance();
+            StudentManager file = StudentManager.GetInstance();
             file.AddLesson(FullName, Faculty, Department, EducationLevel, Institution, Subject);
             file.index = file.Data.Count - 1;
             LessonAdded?.Invoke(this, EventArgs.Empty);

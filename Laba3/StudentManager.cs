@@ -4,9 +4,9 @@ using System.Xml.Serialization;
 
 namespace Laba3
 {
-    internal class Schelude
+    internal class StudentManager
     {
-        private static Schelude _instance;
+        private static StudentManager _instance;
 
         public string FilePath { get; set; }
         public string FileContent { get; set; }
@@ -20,7 +20,7 @@ namespace Laba3
         public delegate ObservableCollection<Student> SearchDelegate(string value);
 
         Dictionary<string, SearchDelegate> SearchHelper;
-        private Schelude()
+        private StudentManager()
         {
             this.index = 0;
             this.Data = new ObservableCollection<Student>();
@@ -31,11 +31,11 @@ namespace Laba3
 
         }
 
-        public static Schelude GetInstance()
+        public static StudentManager GetInstance()
         {
             if (_instance == null)
             {
-                _instance = new Schelude();
+                _instance = new StudentManager();
             }
             return _instance;
         }
@@ -95,21 +95,21 @@ namespace Laba3
 
         private ObservableCollection<Student> findByFullName(string value)
         {
-            var file = Schelude.GetInstance();
+            var file = StudentManager.GetInstance();
             var filteredData = new ObservableCollection<Student>(file.Data.Where(lesson => lesson.FullName.StartsWith(value, StringComparison.OrdinalIgnoreCase)).ToList());
             return filteredData;
         }
 
         private ObservableCollection<Student> findByFaculty(string value)
         {
-            var file = Schelude.GetInstance();
+            var file = StudentManager.GetInstance();
             var filteredData = new ObservableCollection<Student>(file.Data.Where(lesson => lesson.Faculty.StartsWith(value, StringComparison.OrdinalIgnoreCase)).ToList());
             return filteredData;
         }
 
         private ObservableCollection<Student> findBySubject(string value)
         {
-            var file = Schelude.GetInstance();
+            var file = StudentManager.GetInstance();
             var filteredData = new ObservableCollection<Student>(file.Data.Where(lesson => lesson.Subject.StartsWith(value, StringComparison.OrdinalIgnoreCase)).ToList());
             return filteredData;
         }
